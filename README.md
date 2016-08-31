@@ -33,4 +33,4 @@ UIStackViewDistributionFillEqually重新排布视图，使每个视图拥有相�
 <br>
 对于除了 UIStackViewAlignmentFill对齐方式以外的对齐方式，stackView使用每一个被排布的视图的intrinsicContentSize属性，用来计算尺寸。<br>
 UIStackViewAlignmentFill重新排布视图，使每个视图拥有相同的尺寸，以便填充stackView。如果可能，stackView会根据被排布的视图的原有尺寸进行拉伸来填充stackView(垂直)。<br>
-
+![](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIStackView_Class_Reference/Art/StackDemo_2x.png)<br>
