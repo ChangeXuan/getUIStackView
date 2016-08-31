@@ -29,4 +29,8 @@ UIStackView这个类提供了一个提高效率的接口，用来对一行或一
 stackView使用Auto Layout来对视图的位子和尺寸进行排布。stackView with its edges along the stack’s axis 来对第一个和最后一个视图进行对齐。对于一个水平的stackView，意味着布局中的第一个视图的开始边界(左边界)被钉在了stackView的开始边界(左边界)，和布局中的最后一个视图的结束边界(右边界)被钉在了stackView的结束边界(右边界)。对于一个垂直的stackView，意味着视图的上端和下端分别对应着stackView的上端和下端。如果你设置stackView的layoutMarginsRelativeArrangement的属性为true，stackView将使用相关的边距来替代边界对其内容进行对齐。<br>
 <br>
 对于除了 UIStackViewDistributionFillEqually 分布以外的分布方式，stackView使用每一个被排布的视图的intrinsicContentSize属性，用来计算尺寸。<br>
-UIStackViewDistributionFillEqually重新排布视图，使每个视图拥有相同的尺寸，以便填充stackView。如果可能，stackView会根据被排布的视图的原有尺寸进行拉伸来填充stackView
+UIStackViewDistributionFillEqually重新排布视图，使每个视图拥有相同的尺寸，以便填充stackView。如果可能，stackView会根据被排布的视图的原有尺寸进行拉伸来填充stackView。<br>
+<br>
+对于除了 UIStackViewAlignmentFill对齐方式以外的对齐方式，stackView使用每一个被排布的视图的intrinsicContentSize属性，用来计算尺寸。<br>
+UIStackViewAlignmentFill重新排布视图，使每个视图拥有相同的尺寸，以便填充stackView。如果可能，stackView会根据被排布的视图的原有尺寸进行拉伸来填充stackView(垂直)。<br>
+
